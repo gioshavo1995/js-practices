@@ -1,7 +1,7 @@
-var n = 1000;
-var i = 0;
-var j = 0;
-var num = 0;
+let n = 1000;
+let i = 0;
+let j = 0;
+let num = 0;
 while (i<=n) {
     if(n/2 > 50) {
         n=n/2

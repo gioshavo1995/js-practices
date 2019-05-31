@@ -1,7 +1,7 @@
-var arr = [1,2,3,4];
-var sum = 0;
+let arr = [1,2,3,4];
+let sum = 0;
 
-for (i=0 ; i < arr.length; ++i) {
+for (let i=0 ; i < arr.length; ++i) {
 
     sum = sum + arr[i]
 }

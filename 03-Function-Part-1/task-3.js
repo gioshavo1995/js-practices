@@ -1,6 +1,6 @@
-var f = function() {
-    var sum = 0;
-    var result = 0;
+const f = function() {
+    let sum = 0;
+    let result = 0;
     for (argument of arguments) {
         if (typeof argument === 'number') {
             sum = arguments[0] - arguments[1];
@@ -11,6 +11,7 @@ var f = function() {
         
     }
     console.log(result);
+    return(result);
 };
 
-f(3,2,5);
+f(3,2,1);

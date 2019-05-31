@@ -1,6 +1,6 @@
-var message;
+let message;
 
-var login = 'Pitter';
+let login = 'Pitter';
 
 message = login == 'Pitter' ? message = 'Hi': 
 login == 'Owner' ? message = 'Hello':
