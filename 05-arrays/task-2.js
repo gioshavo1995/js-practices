@@ -1,12 +1,13 @@
 const array = [1,2,3];
 var number = 0;
-var newarray= [];
+
 
 
 function filter(arr, fun) {
 if(arr && Array.isArray(arr) &&  fun && typeof fun === "function") {
     for (var i=0; i<arr.length; i++) {
         if(fun(arr[i] , i , arr)) {
+            var newarray= [];
             newarray.push(arr[i]);
         };
     }
