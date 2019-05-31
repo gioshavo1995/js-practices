@@ -12,9 +12,10 @@ if(arr && Array.isArray(arr) &&  fun && typeof fun === "function") {
         };
     }
     console.log(newarray);
+    return newarray;
 
 }else {
-    throw new Error("some error");
+    throw new Error("First parameter required and has to be only array");
 }
 
 

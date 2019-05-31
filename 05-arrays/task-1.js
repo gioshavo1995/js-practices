@@ -8,7 +8,7 @@ if(arr && Array.isArray(arr) &&  fun && typeof fun === "function") {
     }
 
 }else {
-    throw new Error("some error");
+    throw new Error("First parameter required and has to be only array");
 }
 
 

@@ -3,9 +3,10 @@ const array = [1,2,3];
 function every(arr, fun) {
     if (arr.length && Array.isArray(arr) && fun && typeof fun === "function") {
         var something = false;
-        for (var i = 0; i < arr.length; i++) {
+        for (let i = 0; i < arr.length; i++) {
             if(fun(arr[i], i, arr)){
                 something = true;
+                break;
             }
         }
         console.log(something);
@@ -16,5 +17,5 @@ function every(arr, fun) {
 }
 
 every(array, function(item, i, arr) {
-    return item > 5;
+    return item > 2;
 });

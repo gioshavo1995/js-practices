@@ -1,4 +1,4 @@
-function isPositive(number){
+function isEven(number){
     if ( typeof number === 'number') {
 
         if(number%2==0){
@@ -12,4 +12,4 @@ function isPositive(number){
     }
  }
 
- isPositive(2);
+ isEven(2);

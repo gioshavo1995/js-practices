@@ -6,6 +6,7 @@ function every(arr, fun) {
         for (var i = 0; i < arr.length; i++) {
             if(!fun(arr[i], i, arr)){
                 something = false;
+                break;
             }
         }
         console.log(something);
