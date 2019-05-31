@@ -1,4 +1,4 @@
-let a = 0;
+let a = 2;
 
 switch (a) {
     case 0:
@@ -9,7 +9,8 @@ switch (a) {
         console.log('1');
         break;  
 
-    case (2 || 3):
+    case 2:
+    case 3: 
         console.log('2,3');
         break;    
   }
