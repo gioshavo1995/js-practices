@@ -1,17 +1,17 @@
-const f = function() {
-    let sum = 0;
+const f = function (a, b, c) {
     let result = 0;
-    for (argument of arguments) {
-        if (typeof argument === 'number') {
-            sum = arguments[0] - arguments[1];
-            result= sum / arguments[2];
-        }else {
-            throw new Error("all parameters type should be a Number")
-        }
-        
+
+    if (typeof a === 'number' && typeof b === 'number' && typeof c === 'number') {
+
+        result = (a - b) / c;
+
+    } else {
+        throw new Error("all parameters type should be a Number");
     }
     console.log(result);
-    return(result);
-};
+    return result;
+}
 
-f(3,2,1);
+
+
+f(3, 1, 1);
