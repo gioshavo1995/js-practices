@@ -29,7 +29,7 @@ function CoffeeMachine(power, capacity) {
     };
   
     this.setOnReady = function(action) {
-      setTimeout(action, getTimeToBoil());
+      onReady = action;
     };
   
   }

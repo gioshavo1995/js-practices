@@ -18,9 +18,14 @@ function CoffeeMachine(power) {
     };
     
     this.stop = function() {
-        clearTimeout(timerId);
-        timerId = void 0 ;
-        console.log("coffee isn't ready");
+        if(timerId) {
+            clearTimeout(timerId);
+            timerId = void 0 ;
+            console.log("coffee isn't ready");
+        }else {
+            throw new Error("making dont started");
+        }
+        
     }
 }
 
