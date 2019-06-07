@@ -1,16 +1,13 @@
-Object.prototype.delay = function(dely) {
- 
-  return function () {
-    setTimeout(function () {
-      console.log(this);
-      return this.apply(delay, arguments);
-  }, 1000);
-  }
-
-}
 function f() {
   console.log('hello');
 }
+
+  Function.prototype.delay = function (t) {
+    return (...args) => setTimeout(() => {
+        this(...args)
+    }, t)
+}
+
 f.delay(1000)(); // print "hello" after 1 second
 
 // or with parameters:
