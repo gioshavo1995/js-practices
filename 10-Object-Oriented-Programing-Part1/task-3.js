@@ -26,13 +26,7 @@ function CoffeeMachine(power, capacity) {
     
     this.addWater = function(amount) {
         let  tempAmount = waterAmount + amount;
-        if (tempAmount < 0) {
-          throw new Error("Value has to be positive");
-        }
-        if (tempAmount > capacity) {
-          throw new Error("You can't put more water, than " + capacity);
-        }
-        waterAmount = tempAmount;
+        this.setWaterAmount(tempAmount);
       };
 
 }

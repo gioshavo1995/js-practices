@@ -2,6 +2,7 @@ function CoffeeMachine(power, capacity) {
     var waterAmount = 0;
     var WATER_HEAT_CAPACITY = 4200;
     let isProgress = false
+    let timerId; 
   
     function getTimeToBoil() {
       return waterAmount * WATER_HEAT_CAPACITY * 80 / power;
