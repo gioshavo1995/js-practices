@@ -10,7 +10,8 @@ function CoffeeMachine(power) {
 	}
 	
     function onReady() {
-		console.log('Coffee is ready');
+        console.log('Coffee is ready');
+        timerId = void 0 ;
 	}
 	
     this.run = function() {
@@ -33,4 +34,4 @@ function CoffeeMachine(power) {
 const coffeeMachine = new CoffeeMachine(50000);
 coffeeMachine.waterAmount = 200;
 coffeeMachine.run();
-coffeeMachine.stop(); // coffee isn't ready
+// coffeeMachine.stop(); // coffee isn't ready

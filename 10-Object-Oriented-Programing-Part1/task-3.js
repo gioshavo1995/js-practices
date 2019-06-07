@@ -25,8 +25,8 @@ function CoffeeMachine(power, capacity) {
     };
     
     this.addWater = function(amount) {
-        let  tempAmount = waterAmount + amount;
-        this.setWaterAmount(tempAmount);
+          
+        this.setWaterAmount(amount + waterAmount);
       };
 
 }
