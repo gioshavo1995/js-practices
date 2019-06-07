@@ -3,11 +3,7 @@ function truncate(string, maxlength) {
 
         let string2 = string.substring(0 , string.length - 3); 
         let string3 = string2 + '...';
-        console.log(string3);
-        console.log(string.length);
         return string3;
-
-    
     }else {
         throw new Error("some input error")
     }
