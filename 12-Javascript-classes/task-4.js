@@ -1,8 +1,8 @@
 class MyString {
     reverse(str) {
-        var splitString = str.split("");
-        var reverseString = splitString.reverse();
-        var joinString = reverseString.join("");
+        let splitString = str.split("");
+        let reverseString = splitString.reverse();
+        let joinString = reverseString.join("");
         return joinString;
     }
 
@@ -12,8 +12,8 @@ class MyString {
 
     ucWords(str) {
 
-    var splitStr = str.toLowerCase().split(' ');
-    for (var i = 0; i < splitStr.length; i++) {
+    let splitStr = str.toLowerCase().split(' ');
+    for (let i = 0; i < splitStr.length; i++) {
         splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
     }
     return splitStr.join(' '); 
@@ -21,7 +21,7 @@ class MyString {
 }
 
 
-var str = new MyString();
+let str = new MyString();
 
 console.log(str.reverse('abcde')); // print 'edcba'
 console.log(str.ucFirst('abcde')); // print 'Abcde'
