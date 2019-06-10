@@ -27,7 +27,7 @@ class Worker {
 }
 
 
-var worker = new Worker('John', 'Smith', 10, 31);
+let worker = new Worker('John', 'Smith', 10, 31);
 
 console.log(worker.getName()); // print 'John'
 console.log(worker.getSurname()); // print 'Smith'
