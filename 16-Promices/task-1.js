@@ -1,14 +1,9 @@
-const isCustomerVerified = (customer) => {
-    return new Promise((resolve, reject) => {
-        let valid = "Customer is not verified";
-        if(customer.verified === true) {
-            valid = true;
-
-        }
-
-        return resolve(valid);
-    });
-};
+function isCustomerVerified(customer) {
+    if (customer.hasOwnProperty('verified') && customer.verified == true) {
+        return Promise.resolve(true);
+    }
+    return Promise.reject('Customer is not verified');
+}
 
 
 const personFirst = {
