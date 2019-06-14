@@ -13,9 +13,10 @@ class MyString {
 
     ucWords(str) {
 
-    let splitStr = str.toLowerCase().split(' ');
-    for (let i = 0; i < splitStr.length; i++) {
-        splitStr[i]= this.ucFirst(splitStr[i]);  
+        let splitStr = str.split(' ');
+        for (let i = 0; i < splitStr.length; i++) {
+            splitStr[i] = this.ucFirst(splitStr[i]);
+
     }
     return splitStr.join(' '); 
 }
@@ -26,4 +27,4 @@ let str = new MyString();
 
 console.log(str.reverse('abcde')); // print 'edcba'
 console.log(str.ucFirst('abcde')); // print 'Abcde'
-console.log(str.ucWords('abcde abcde abcde')); // print 'Abcde Abcde Abcde'
+console.log(str.ucWords('abcde abcFe abFde')); // print 'Abcde Abcde Abcde'
