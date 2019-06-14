@@ -8,12 +8,12 @@ const getCustomers = (customer) => {
             for (let j=0; j<countries.length; j++){
 
                 if (customer[i].id === countries[j].id) {
-                    if (customer[i].verified === true || countries[j].verified === true) {
+                    if (customer[i].verified) {
                         merge.push(Object.assign(customer[i], countries[j]));
                     }
                     resolve(merge);
                 } else {
-                    reject(`We don't have information about country for this customer: ${customer.name}`);
+                    reject(`We don't have information about country for this customer: ${customer[i].name}`);
                 }
 
 
