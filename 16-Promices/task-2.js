@@ -7,9 +7,9 @@ const getCustomers = (customer) => {
 
             for (let j=0; j<countries.length; j++){
 
-                if (customer[i].id === counctry[j].id) {
-                    if (customer[i].verified === true || counctry[j].verified === true) {
-                        merge.push(Object.assign(customer[i], counctry[j]));
+                if (customer[i].id === countries[j].id) {
+                    if (customer[i].verified === true || countries[j].verified === true) {
+                        merge.push(Object.assign(customer[i], countries[j]));
                     }
                     resolve(merge);
                 } else {
